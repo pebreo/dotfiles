@@ -1,0 +1,14 @@
+# You must put this in ~/.ssh
+# you can customize the filenames
+
+Host github.com
+ IdentityFile ~/.ssh/githubmac1
+
+Host bitbucket.org
+ IdentityFile ~/.ssh/bitbucketmac1
+
+Host heroku.com
+ IdentityFile ~/.ssh/herokumac1
+
+Host localhost
+ IdentityFile ~/.ssh/ubuntu64mac1

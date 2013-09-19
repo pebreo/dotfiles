@@ -1,0 +1,8 @@
+# You must put this in ~/.ssh
+# you can customize the filenames
+
+Host bitbucket.org
+ IdentityFile ~/.ssh/linuxmintdev1
+ 
+Host github.com
+ IdentityFile ~/.ssh/linuxmintdev2
