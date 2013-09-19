@@ -12,10 +12,10 @@ Using the .ssh config files (~/.ssh/config)
     Type in a name which will be put in `~/.ssh` directory
 
 2. Add the publickey name in `~/.ssh/config` file like this:
-```
-Host bitbucket.org
- IdentityFile ~/.ssh/mybitbucketpubfile
-```
+
+        Host bitbucket.org
+          IdentityFile ~/.ssh/mybitbucketpubkeyfile # the leading space is important!
+
 Note: For Windows, you must run Pageant (included in Putty) as the SSH key manager.
 Pageant runs in the system tray and is called whenever an SSH key is needed by your programs.
 
