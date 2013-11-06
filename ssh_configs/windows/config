@@ -1,8 +1,13 @@
 # You must put this in /c/User/MyName/.ssh/ (~/.ssh)
 # You can customize the filenames
 # Also, in Windows you must use OpenSSH not Putty
-# for this to work
+# for this to work. Also note that spacing matters below.
 
 Host mysite.com
  IdentityFile ~/.ssh/myprivatekeyfile
-  Port 12345
+ Port 123
+
+Host mysite2.com
+ IdentityFile ~/.ssh/myprivatekeyfile2
+ User myuser
+ Port 123
