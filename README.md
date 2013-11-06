@@ -14,13 +14,19 @@ Using the .ssh config files (~/.ssh/config)
 2. To bypass password prompt, you should add the `foo.pub` file to the `authorized_keys` file on the
 server's `~/.ssh` directory. You can do a pipe via ssh.
     
-    `cat mykey.pub | ssh myuser@mysite.com -p 3222 'cat >> .ssh/authorized_keys' `
+    `cat mykey.pub | ssh myuser@mysite.com -p 123 'cat >> .ssh/authorized_keys' `
 
 3. Add the publickey name in `~/.ssh/config` file like this:
 
         Host bitbucket.org
-          IdentityFile ~/.ssh/mybitbucketpubkeyfile # the leading space is important!
-          Port 1234
+          IdentityFile ~/.ssh/myprivatekeyfile # the leading spaces are important!
+          Port 123
+
+4. SSH into the remote server 
+
+        ssh user@mysite.com
+        or
+        ssh mysite.com # if you setup the User setting in config
 
 SSH and SFTP for Windows
 -----------------------
