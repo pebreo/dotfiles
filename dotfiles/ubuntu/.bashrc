@@ -4,6 +4,7 @@ alias ls="ls --color=auto"
 alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
+alias glog='git log --oneline'
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
