@@ -2,6 +2,8 @@
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
+alias glog='git log --oneline'
+
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
