@@ -28,6 +28,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 alias ls='ls --color=auto -alhX'
+alias glog='git log --oneline'
 
 # virtualenvwrapper 
 export WORKON_HOME=$HOME/.virtualenvs
