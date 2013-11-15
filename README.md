@@ -12,11 +12,11 @@ Using the .ssh config files (~/.ssh/config)
     Type in a name which will be put in `~/.ssh` directory
 
 2. To bypass password prompt, you should add the `foo.pub` file to the `authorized_keys` file on the
-server's `~/.ssh` directory. You can do a pipe via ssh.
+server's `~/.ssh` directory. You can do a pipe via ssh:
     
     `cat mykey.pub | ssh myuser@mysite.com -p 123 'cat >> .ssh/authorized_keys' `
 
-3. Add the publickey name in `~/.ssh/config` file like this:
+3. Add the publickey name to the `~/.ssh/config` file like this:
 
         Host bitbucket.org
           IdentityFile ~/.ssh/myprivatekeyfile # the leading spaces are important!
