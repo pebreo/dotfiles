@@ -3,11 +3,12 @@
 # Also, in Windows you must use OpenSSH not Putty
 # for this to work. Also note that spacing matters below.
 
-Host mysite.com
+Host bitbucket.org
  IdentityFile ~/.ssh/myprivatekeyfile
  Port 123
 
-Host mysite2.com
- IdentityFile ~/.ssh/myprivatekeyfile2
+Host github.com
+ Hostname ssh.github.com
+ IdentityFile ~/.ssh/myprivatekeyfile
  User myuser
- Port 123
+ Port 443
