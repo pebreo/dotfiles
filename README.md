@@ -50,3 +50,21 @@ then convert your file from dos
 ```
 fromdos myfile
 ```
+
+Github setup
+--------------
+Make sure when you create a repo that you set the remote using SSH like this
+`git remote add origin ssh://git@github.com/username/repo.git # not HTTPS!`
+
+and make sure that your `config` file has the following:
+```
+Host github.com
+ Hostname ssh.github.com
+ IdentityFile ~/.ssh/myprivatekeyfile
+ User myuser
+ Port 443
+```
+To check whether your `config` is properly setup for Github, type the following:
+`ssh -T git@github.com` 
+You should get the following response:
+`You've successfully authenticated, but GitHub does not provide shell access.`
