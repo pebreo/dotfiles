@@ -29,6 +29,7 @@ fi
 
 alias ls='ls --color=auto -alhX'
 alias glog='git log --oneline'
+alias python3='py -E -3' # used to run Python 3.3 side-by-side with Python 2.7
 
 # virtualenvwrapper 
 export WORKON_HOME=$HOME/.virtualenvs
