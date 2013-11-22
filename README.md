@@ -68,3 +68,11 @@ To check whether your `config` is properly setup for Github, type the following:
 `ssh -T git@github.com` 
 You should get the following response:
 `You've successfully authenticated, but GitHub does not provide shell access.`
+
+Windows setup for Python 2 and 3
+-------------------------------
+If you want Python 3 and 2 to work side-by-side, you must take the following steps:
+
+1. Install Python 3.3 using MSI binary installer
+2. Make an alias like this `alias python3='py -3'` in your `~/.bashrc`
+3. Add the `unset PYTHONPATH` command to your `.bashrc` file so that `py -3` can work
