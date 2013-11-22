@@ -35,4 +35,4 @@ alias python3='py -E -3' # used to run Python 3.3 side-by-side with Python 2.7
 export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/Devel
 export VIRTUALENVWRAPPER_SCRIPT=/c/Python27/Scripts/virtualenvwrapper.sh
-source /c/Python27/Scripts/virtualenvwrapper_lazy.sh
+. /c/Python27/Scripts/virtualenvwrapper_lazy.sh
