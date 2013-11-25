@@ -27,10 +27,16 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
+pyt() 
+{
+ py -m pytest $1    
+}
+
 alias ls='ls --color=auto -alhX'
 alias glog='git log --oneline'
 alias python3='py -3' # for Windows, make sure to '$ unset PYTHONPATH' 
-                
+alias pytest=pyt
+
 # virtualenvwrapper 
 export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/Devel
