@@ -4,6 +4,10 @@ export LSCOLORS=Exfxcxdxbxegedabagacad
 
 alias glog='git log --oneline'
 alias smysql='mysql.server start'
+myhello() {
+  echo 'hello, ' $1 
+}
+alias hello=myhello
 
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
