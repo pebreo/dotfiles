@@ -4,10 +4,19 @@ export LSCOLORS=Exfxcxdxbxegedabagacad
 
 alias glog='git log --oneline'
 alias smysql='mysql.server start'
-myhello() {
-  echo 'hello, ' $1 
+alias ipythonnb='ipython notebook --pylab=inline'
+myvagrantup() {
+ vagrant up $1
 }
-alias hello=myhello
+myvagrantssh() {
+ vagrant ssh $1    
+i}
+myvagranthalt() {
+ vagrant halt $1
+}
+alias vup=myvagrantup
+alias vssh=myvagrantssh
+alias vhalt=myvagranthalt
 
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
