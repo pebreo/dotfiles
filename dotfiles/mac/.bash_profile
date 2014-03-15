@@ -10,7 +10,7 @@ myvagrantup() {
 }
 myvagrantssh() {
  vagrant ssh $1    
-i}
+}
 myvagranthalt() {
  vagrant halt $1
 }
