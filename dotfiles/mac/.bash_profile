@@ -18,6 +18,11 @@ alias vup=myvagrantup
 alias vssh=myvagrantssh
 alias vhalt=myvagranthalt
 
+mynpm() {
+ sudo npm $1 $2 $3 $4 $5
+}
+alias npm=mynpm
+
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
