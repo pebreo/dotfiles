@@ -5,6 +5,10 @@ alias dir="dir --color=auto"
 alias grep="grep --color=auto"
 alias dmesg='dmesg --color'
 alias glog='git log --oneline'
+mynpm() {
+ sudo npm $1 $2 $3 $4 $5 
+}
+alias npm=mynpm
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
