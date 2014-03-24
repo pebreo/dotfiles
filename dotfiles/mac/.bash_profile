@@ -23,6 +23,10 @@ mynpm() {
 }
 alias npm=mynpm
 
+sub() {
+ open $1 -a "Sublime Text 2" 
+}
+
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
 
@@ -42,9 +46,13 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH
+
 PATH="/Applications/Postgres.app/Contents/MacOS/bin:${PATH}"
 export PATH
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
+export PATH
