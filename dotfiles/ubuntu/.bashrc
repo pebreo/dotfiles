@@ -12,3 +12,14 @@ alias npm=mynpm
 
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
+
+export DOCKER_HOST=tcp://192.168.59.103:2375
+alias d='docker'
+alias b2d='boot2docker'
+alias dl='docker ps -l -q' # get last container used
+alias dpsl='docker ps -l' # list all docker containers
+
+# run interactive shell in container
+drun() {
+ docker run -i -t $1 /bin/bash 
+}
