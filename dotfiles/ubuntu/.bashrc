@@ -23,3 +23,8 @@ alias dpsl='docker ps -l' # list all docker containers
 drun() {
  docker run -i -t $1 /bin/bash 
 }
+
+# delete all docker containers
+ddel() {
+ docker rm $(docker ps -aq)
+}
