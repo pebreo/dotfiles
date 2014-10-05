@@ -2,30 +2,6 @@
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
-alias glog='git log --oneline'
-alias smysql='mysql.server start'
-alias ipythonnb='ipython notebook --pylab=inline'
-myvagrantup() {
- vagrant up $1
-}
-myvagrantssh() {
- vagrant ssh $1    
-}
-myvagranthalt() {
- vagrant halt $1
-}
-alias vup=myvagrantup
-alias vssh=myvagrantssh
-alias vhalt=myvagranthalt
-
-mynpm() {
- sudo npm $1 $2 $3 $4 $5
-}
-alias npm=mynpm
-
-sub() {
- open $1 -a "Sublime Text 2" 
-}
 
 #Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
@@ -56,3 +32,45 @@ export PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH
+
+
+git config --global core.pager ''
+
+sub() {
+ open $1 -a "Sublime Text 2"
+}
+
+b2d() {
+ sudo boot2docker $1 $2 $3 $4 $5
+}
+
+alias glog='git log --graph --all --decorate  --oneline'
+alias smysql='mysql.server start'
+alias inb='ipython notebook --pylab=inline'
+myvagrantup() {
+ vagrant up $1
+}
+myvagrantssh() {
+ vagrant ssh $1    
+}
+myvagranthalt() {
+ vagrant halt $1
+}
+alias vup=myvagrantup
+alias vssh=myvagrantssh
+alias vhalt=myvagranthalt
+
+alias b2d=b2d
+
+alias d=docker
+alias dl='docker ps -l -q'
+
+# enable daemon to talk to client
+export DOCKER_HOST=tcp://127.0.0.1:4243
+
+
+# virtualenvwrapper stuff
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper_lazy.sh
