@@ -36,6 +36,7 @@ export PATH
 
 git config --global core.pager ''
 git config --global color.diff true
+git config --global color.ui true
 
 sub() {
  open $1 -a "Sublime Text 2"
