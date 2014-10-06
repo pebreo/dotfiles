@@ -26,6 +26,7 @@ alias dl='docker ps -l -q' # get last container used
 alias dpsl='docker ps -l' # list all docker containers
 
 # run interactive shell in container
+# usage: $ drun mytag
 drun() {
  docker run -i -t $1 /bin/bash 
 }
