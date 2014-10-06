@@ -2,6 +2,8 @@ PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo 'mini110-
 
 git config --global core.pager ''
 git config --global color.diff true
+git config --global color.ui true
+
 
 alias ls="ls --color=auto"
 alias dir="dir --color=auto"
