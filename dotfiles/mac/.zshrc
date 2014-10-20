@@ -116,8 +116,6 @@ alias dl='docker ps -l -q'
 # enable daemon to talk to client
 export DOCKER_HOST=tcp://127.0.0.1:4243
 
-
-
 # virtualenvwrapper stuff
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
