@@ -1,6 +1,10 @@
 # You must put this in ~/.ssh
 # you can customize the filenames
 
+Host *
+ ServerAliveInterval 25
+ ServerAliveCountMax 20
+
 Host github.com
  IdentityFile ~/.ssh/githubmac1
 
