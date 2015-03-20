@@ -84,8 +84,8 @@ export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:/usr/local/heroku/b
 
 git config --global core.pager ''
 
-sub() {
- open $1 -a "Sublime Text 2"
+subl() {
+ open $1 -a "Sublime Text"
 }
 
 b2d() {
@@ -113,14 +113,17 @@ alias b2d=b2d
 alias d=docker
 alias dl='docker ps -l -q'
 
-# enable daemon to talk to client
-export DOCKER_HOST=tcp://127.0.0.1:4243
 
 # virtualenvwrapper stuff
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 source /usr/local/bin/virtualenvwrapper.sh
-
-# configuration for homebrew-install programs
+alias apb=ansible-playbook
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
 export PATH=/usr/local/bin:$PATH
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/paul/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
