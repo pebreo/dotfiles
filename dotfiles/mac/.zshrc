@@ -89,7 +89,11 @@ subl() {
 }
 
 b2d() {
- sudo boot2docker $1 $2 $3 $4 $5
+ sudo boot2docker $1 $2 $3 $4 $5  $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20
+}
+
+dc() {
+ docker-compose $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20
 }
 
 alias glog='git log --graph --all --decorate  --oneline'
