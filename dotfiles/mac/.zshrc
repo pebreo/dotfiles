@@ -52,7 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 #Tell grep to highlight matches
-#export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS='--color=auto'
 
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:/usr/local/heroku/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/lib/node_modules/karma/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -94,6 +94,11 @@ b2d() {
 
 dc() {
  docker-compose $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20
+}
+
+# pass in the image name so you can do interactive shell
+dit() {
+ docker run -it $1 /bin/bash
 }
 
 alias glog='git log --graph --all --decorate  --oneline'
