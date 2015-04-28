@@ -8,7 +8,7 @@
 [merge]
 	tool = opendiff
 [core]
-	pager = 
+	pager = less -+F -+X
 	editor = vim
 [alias]
   co = checkout
