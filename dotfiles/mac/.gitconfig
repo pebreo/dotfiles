@@ -14,7 +14,7 @@
   co = checkout
     ci = commit
       s = status
-      l = log --oneline 
+      l = log --oneline --decorate
         br = branch
           hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
             type = cat-file -t
