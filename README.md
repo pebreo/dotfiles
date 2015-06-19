@@ -24,7 +24,7 @@ server's `~/.ssh` directory. You can do a pipe via ssh:
 
 4. SSH into the remote server 
 
-        ssh user@mysite.com
+        ssh root@mysite.com
         or
         ssh mysite.com # if you setup the User setting in config
 
