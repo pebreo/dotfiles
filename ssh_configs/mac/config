@@ -3,7 +3,7 @@
 
 Host *
  ServerAliveInterval 25
- ServerAliveCountMax 20
+ #ServerAliveCountMax 20
 
 Host github.com
  IdentityFile ~/.ssh/githubmac1
