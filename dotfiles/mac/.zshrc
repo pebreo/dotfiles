@@ -100,6 +100,10 @@ dma() {
  docker-machine $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20
 }
 
+deval() {
+ eval "$(docker-machine env $1)"
+}
+
 # pass in the image name so you can do interactive shell
 dit() {
  docker run -it $1 /bin/bash
