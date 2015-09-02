@@ -62,14 +62,8 @@ alias vup=myvagrantup
 alias vssh=myvagrantssh
 alias vhalt=myvagranthalt
 
-alias b2d=b2d
-
 alias d=docker
 alias dl='docker ps -l -q'
-
-# enable daemon to talk to client
-export DOCKER_HOST=tcp://127.0.0.1:4243
-
 
 # virtualenvwrapper stuff
 export WORKON_HOME=$HOME/.virtualenvs
