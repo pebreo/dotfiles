@@ -106,8 +106,11 @@ deval() {
 
 # pass in the image name so you can do interactive shell
 dit() {
- docker run -it $1 /bin/bash
+ docker exec -it $1 /bin/bash
 }
+
+dallstop='docker stop $(docker ps -a -q)'
+dallrm='docker rm $(docker ps -a -q)'
 
 alias glog='git log --graph --all --decorate  --oneline'
 alias smysql='mysql.server start'
