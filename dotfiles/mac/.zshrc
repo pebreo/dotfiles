@@ -108,10 +108,10 @@ deval() {
 dit() {
  docker exec -it $1 /bin/bash
 }
-dbash=dit
+alias dbash=dit
 
-dallstop='docker stop $(docker ps -a -q)'
-dallrm='docker rm $(docker ps -a -q)'
+alias dallstop='docker stop $(docker ps -a -q)'
+alias dallrm='docker rm $(docker ps -a -q)'
 
 alias glog='git log --graph --all --decorate  --oneline'
 alias smysql='mysql.server start'
