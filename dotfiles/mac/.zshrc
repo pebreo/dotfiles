@@ -108,6 +108,7 @@ deval() {
 dit() {
  docker exec -it $1 /bin/bash
 }
+dbash=dit
 
 dallstop='docker stop $(docker ps -a -q)'
 dallrm='docker rm $(docker ps -a -q)'
