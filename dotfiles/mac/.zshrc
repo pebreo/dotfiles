@@ -108,7 +108,13 @@ deval() {
 dit() {
  docker exec -it $1 /bin/bash
 }
-alias dbash=dit
+
+dcompleterebuild() {
+ dc stop
+ dc rm -f
+ dc build
+ dc up -d 
+}
 
 alias dallstop='docker stop $(docker ps -a -q)'
 alias dallrm='docker rm $(docker ps -a -q)'
