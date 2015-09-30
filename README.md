@@ -76,3 +76,9 @@ If you want Python 3 and 2 to work side-by-side, you must take the following ste
 1. Install Python 3.3 using MSI binary installer
 2. Make an alias like this `alias python3='py -3'` in your `~/.bashrc`
 3. Add the `unset PYTHONPATH` command to your `.bashrc` file so that `py -3` can work
+
+Sublime shortcut for Mac terminal
+---------------------------------
+```
+sudo ln -s “/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl” /bin/subl
+```
