@@ -80,5 +80,9 @@ If you want Python 3 and 2 to work side-by-side, you must take the following ste
 Sublime shortcut for Mac terminal
 ---------------------------------
 ```
-sudo ln -s “/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl” /bin/subl
+# Sublime 2
+sudo ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/
+
+# Sublime 3
+sudo ln -s /Applications/Sublime Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/
 ```
