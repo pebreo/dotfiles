@@ -112,6 +112,7 @@ dit() {
 dcstopstart() {
  dc stop
  dc rm -f
+ dc build
  dc up --force-recreate -d 
 }
 
