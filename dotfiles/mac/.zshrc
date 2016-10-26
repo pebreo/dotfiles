@@ -109,11 +109,10 @@ dit() {
  docker exec -it $1 /bin/bash
 }
 
-dcompleterebuild() {
+dcstopstart() {
  dc stop
  dc rm -f
- dc build
- dc up -d 
+ dc up --force-recreate -d 
 }
 
 alias dallstop='docker stop $(docker ps -a -q)'
