@@ -140,6 +140,8 @@ alias b2d=b2d
 alias d=docker
 alias dl='docker ps -l -q'
 
+alias ipyt='pyenv activate ipython'
+
 git config --global core.pager 'less -+F -+X'
 
 # virtualenvwrapper stuff
