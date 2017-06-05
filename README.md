@@ -77,6 +77,36 @@ If you want Python 3 and 2 to work side-by-side, you must take the following ste
 2. Make an alias like this `alias python3='py -3'` in your `~/.bashrc`
 3. Add the `unset PYTHONPATH` command to your `.bashrc` file so that `py -3` can work
 
+Brew + pyenv Mac setup
+---------------------
+```
+brew install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
+```
+In the `.zshrc`
+```
+# virtualenvwrapper stuff
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh
+alias apb=ansible-playbook
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
+
+```
+Update pyenv
+------------
+```
+brew update
+brew upgrade pyenv
+```
+
+
+
 Sublime shortcut for Mac terminal
 ---------------------------------
 ```
