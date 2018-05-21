@@ -156,6 +156,7 @@ export PATH=/usr/local/bin:$PATH
 # for newest git
 export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
 
+ASPNETCORE_ENVIRONMENT=Development
 
 # for pyenv
 eval "$(pyenv init -)"
