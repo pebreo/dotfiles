@@ -142,10 +142,14 @@ alias dl='docker ps -l -q'
 
 alias ipyt='pyenv activate ipython'
 
-
+# VS Code and dotnet command shortcuts
 dn() {
  dotnet "$@"
  #dotnet $1 $2 $3 $4 $5 $6 $7 $8 $9 $10 $11 $12 $13 $14 $15 $16 $17 $18 $19 $20
+}
+
+code() {
+   open -a Visual\ Studio\ Code.app $1
 }
 
 git config --global core.pager 'less -+F -+X'
