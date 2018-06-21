@@ -22,8 +22,8 @@ server's `~/.ssh` directory. You can do a pipe via ssh:
           IdentityFile ~/.ssh/myprivatekeyfile # the leading spaces are important!
           Port 123
 
-4. SSH into the remote server 
-
+4. Verify and then SSH into the remote server. To check if your config is right type: `ssh -T git@github.com`
+      
         ssh root@mysite.com
         or
         ssh mysite.com # if you setup the User setting in config
