@@ -165,7 +165,7 @@ export PATH=$PYENV_ROOT/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 # for newest git
 export PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH
-
+export PATH=$HOME/.dotnet/tools:$PATH
 export ASPNETCORE_ENVIRONMENT=Development
 
 # for pyenv
